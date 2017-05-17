@@ -1,0 +1,65 @@
+﻿<article>
+                    <div class="post-content">
+                        <h2><a href="">{$pulang['服务转移列表']}-{$pulang[$t['当前查看状态']]}</a></h2>
+                        <hr>
+<div class="r-tabs">
+			
+          <ul class="r-tabs-nav">
+
+<li class="r-tabs-tab r-tabs-state-{if $t['当前查看状态']=='全部'}active{else}default{/if}">
+<a href="/index.php/plugin/push/index/alllist/" class="r-tabs-anchor">{$pulang['全部']}</a>
+</li>
+<li class="r-tabs-tab r-tabs-state-{if $t['当前查看状态']=='等待审核'}active{else}default{/if}">
+<a href="/index.php/plugin/push/index/zyzlist/" class="r-tabs-anchor">{$pulang['等待审核']}</a>
+</li>
+<li class="r-tabs-tab r-tabs-state-{if $t['当前查看状态']=='转移成功'}active{else}default{/if}">
+<a href="/index.php/plugin/push/index/yeslist/" class="r-tabs-anchor">{$pulang['转移成功']}</a>
+</li>
+<li class="r-tabs-tab r-tabs-state-{if $t['当前查看状态']=='驳回审核'}active{else}default{/if}">
+<a href="/index.php/plugin/push/index/nolist/" class="r-tabs-anchor">{$pulang['驳回审核']}</a>
+</li>
+<li class="r-tabs-tab r-tabs-state-{if $t['当前查看状态']=='转移取消'}active{else}default{/if}" >
+<a href="/index.php/plugin/push/index/qxlist/" class="r-tabs-anchor">{$pulang['转移取消']}</a>
+</li>
+
+
+          </ul>
+    </div><br><br>
+	<style type="text/css">
+	.r-tabs li { float:left;list-style:none;margin-left: 10px;}
+</style>                     
+<table class="products-table responsive wow fadeInUp tablesaw tablesaw-stack table table-bordered" data-mode="stack" style="visibility: visible; -webkit-animation: fadeInUp;">
+         <thead>
+		<tr>
+			<th>{$pulang['服务用户名']}</th>
+			<th>{$pulang['对方用户名']}</th>
+			<th>{$pulang['转移时间/成功时间']}</th>
+			<th>{$pulang['状态']}</th>
+		</tr></thead>
+		
+		<tbody>
+		{foreach from=$t['列表'] item=li}
+		<tr>
+			<td>
+			{$li['用户名']}[{$li['类型']}]
+			{if $li['类型']=='转出' &&  $li['状态']=='等待审核' }
+			<br>
+			<a href="/index.php/plugin/push/admin/userqx/{$li['id']}">{$pulang['取消转移']}</a>
+			{/if}
+			</td>
+			<td>{$li['对方用户名']}</td>
+			<td>
+			{$li['提交时间']}<br>
+			{$li['成功时间']}
+			</td>
+			<td>
+			{$li['状态']}
+			</td>
+		</tr>{/foreach}
+		</tbody>
+        </table>
+	
+                    </div>
+                </article>
+
+

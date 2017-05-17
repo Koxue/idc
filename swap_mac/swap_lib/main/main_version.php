@@ -1,0 +1,1 @@
+<?php  defined('SWAP_ROOT') or die('非法操作'); $GLOBALS['swap_mac']=array_merge($GLOBALS['swap_mac'],array('version'=>'1.0.8')); 

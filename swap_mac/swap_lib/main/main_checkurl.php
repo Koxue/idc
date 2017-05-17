@@ -1,0 +1,1 @@
+<?php  defined('SWAP_ROOT') or die('·Ç·¨²Ù×÷'); function checkurl() { if (preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) !== preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) { header("Location: http://www.baidu.com"); exit(); } } 

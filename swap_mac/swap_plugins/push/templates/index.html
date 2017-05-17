@@ -1,0 +1,42 @@
+﻿<article>
+                    <div class="post-content">
+                        <h2><a href="">{$pulang['服务转移']}</a></h2>
+                        <hr>
+                     
+<form  method="POST" action="/index.php/plugin/push/admin/userzy/" >
+<div class="" style="width:100%;text-align:left;">
+	<div  style="width:100%;text-align:left;background-color: #eeeeee;color: #555555;padding: 10px;border-radius: 6px;margin-bottom: 20px;">
+		<p>
+			{$pulang['选择服务']}:<br>
+			<select name="服务id">
+			{foreach from=$t['列表'] item=li}
+				<option value="{$li['id']}">{$li['用户名']}</option>
+			{/foreach}
+			</select>
+		</p>
+		<p>
+			{$pulang['对方邮箱']}:<br>
+			<input name="对方邮箱" type="text"  autocomplete="off" required>
+		</p>
+		<p>
+			{$pulang['对方用户名']}:<br>
+			<input name="对方用户名" type="text"  autocomplete="off" required>
+		</p>
+		<p>
+			{$pulang['密码验证']}:<br>
+			<input type="password" style="display:none">
+			<input name="账户密码" type="password"  autocomplete="off" required>
+		</p>
+		<p>
+			<input class="btn btn-primary" style="height:30px" type="submit" value="{$pulang['提交转移']}" >
+			<a href="/index.php/plugin/push/index/alllist/" class="btn btn-primary">{$pulang['查看转移列表']}</a>
+		</p>
+		
+	</div>
+</div>
+</form>
+
+					 </div>
+                </article>
+
+

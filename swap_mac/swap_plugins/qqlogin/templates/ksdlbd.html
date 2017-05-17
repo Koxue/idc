@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$c['网站名称']}-绑定QQ</title>
+
+<script type="text/javascript">
+console.log('插件虽然黑色小河(974071939)写 但是 此界面风格由 764098204 友情提供');
+</script>
+	{if $alert['error'] != ""}
+<script type="text/javascript">
+alert('{$alert["error"]}');
+</script>
+{/if}
+  <body >
+{$c['网站名称']}-绑定QQ<br>
+<img src="{$L['qqlogin_info']['头像']}"><br>
+ Hi,{$L['qqlogin_info']['昵称']}<br>
+<form method="post" action="?ok=ok">
+<input type="text"  name="u" placeholder="用户名 / 邮箱" required="required"><br>
+<input  name="p" placeholder="密码" type="password" required=""><br>
+<button type="submit" id="loginBtn" class="btn btn-block" >绑定登录并账号</button><br>
+还没有账号?&nbsp;</a><a  href="{$ROOT}/index/register/" target="_blank" title="注册账号">注册新帐户</a>
+<!-- 求赞助资金来抚慰我这只穷单身狗的心灵 shijian9740@163.com --></form>

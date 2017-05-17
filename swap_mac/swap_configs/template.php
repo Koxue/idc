@@ -1,0 +1,1 @@
+<?php  return array('template' => 'default','force_compile' => false,'debugging' => false,'caching' => true,'cache_lifetime' => 120);

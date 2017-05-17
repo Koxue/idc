@@ -1,0 +1,42 @@
+﻿
+<article>
+                    <div class="post-content">
+                        <h2><a href="">{$pulang['充值记录']}</a></h2>
+                        <hr>
+            
+<table class="products-table responsive wow fadeInUp tablesaw tablesaw-stack table table-bordered" data-mode="stack" style="visibility: visible; -webkit-animation: fadeInUp;">
+         <thead>
+		<tr>
+			<th>{$pulang['订单id']}</th>
+			<!-- <th>{$pulang['支付接口']}</th> -->
+			<th>{$pulang['总价']}</th>
+			<th>{$pulang['创建时间']}</th>
+			<th>{$pulang['当前状态']}</th>
+		</tr></thead>
+		
+		<tbody>
+		{foreach from=$list item=li}
+		<tr>
+		
+		<td>{$li['订单id']}</td>
+	<!-- 		<th>{$li['支付网关']}</td> -->
+			<td>{$li['总价']}</td>
+			<td>{$li['时间']}</td>
+			<td>{$li['状态']}</td>
+		</tr>{/foreach}
+		</tbody>
+        </table>
+<div class="r-tabs">
+			
+          <ul class="r-tabs-nav">
+
+<li class="r-tabs-tab r-tabs-state-{if $t['当前页数']=='1'}default{else}active{/if}" style="padding: 0 0 0 0;"><a href="{$t['上一页连接']}" class="r-tabs-anchor">{$pulang['上一页']}</a></li>
+<li class="r-tabs-tab r-tabs-state-default" style="padding: 0 0 0 0;"><a  class="r-tabs-anchor">{$pulang['总共']}{$t['总页数']}{$pulang['页']} {$pulang['当前']}{$t['当前页数']}{$pulang['页']}</a></li>
+<li class="r-tabs-tab r-tabs-state-{if $t['当前页数']==$t['总页数']}default{else}active{/if}" style="padding: 0 0 0 0;"><a href="{$t['下一页连接']}" class="r-tabs-anchor">{$pulang['下一页']}</a></li>
+          </ul>
+    </div>
+	<style type="text/css">
+	.r-tabs li { float:left;list-style:none;margin-left: 10px;}
+</style>	
+                    </div>
+                </article>

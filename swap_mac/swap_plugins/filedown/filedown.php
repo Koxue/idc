@@ -1,0 +1,4 @@
+<?php  defined('SWAP_ROOT') or die('非法操作'); function filedown_config(){ $config['swap_plug']='资源下载插件'; $config['swap_plug_version']='1.0'; $config['swap_plug_explain']=<<<SWAP
+资源下载，用于显示资源下载的列表
+SWAP;
+ $config['swap_plug_author']='黑色小河'; $config['swap_plug_website']=''; return $config; } function filedown_php(){ if($aa=="1"){ $OSWAP_0bdf8f529781876942bf159262c30870=""; }else{ $OSWAP_0bdf8f529781876942bf159262c30870="/index.php"; } $lang=plug_lang_get('filedown','main'); echo '<li><a href="'.$OSWAP_0bdf8f529781876942bf159262c30870.'/plugin/filedown/index/">'.$lang['资源下载'].'</a></li>'; } add_swap_plug('用户页面列表','filedown_php'); function filedown_adminlb(&$OSWAP_3178a7f12d1519d9caed4dbfed5fd13f){ $OSWAP_3178a7f12d1519d9caed4dbfed5fd13f[]=array( 'name'=>'资源下载', 'link'=>'/index.php/plugin/filedown/admin/' ); } add_swap_plug('管理员菜单列表','filedown_adminlb');

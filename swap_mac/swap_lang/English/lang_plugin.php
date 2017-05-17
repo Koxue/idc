@@ -1,0 +1,36 @@
+<?php
+defined('SWAP_ROOT') or die('非法操作');
+$lang['login']['需要登陆提示']='Please login to view other service!';
+$lang['error']['您的账户已经被禁止登入']='Your account has been banned Login';
+$lang['index']['警告']='Warning';
+$lang['index']['错误']='Error';
+$lang['index']['成功']='Success';
+$lang['index']['信息']='Information';
+$lang['index']['客户中心']='Client Area';
+$lang['index']['欢迎回来']='Welcome back';
+$lang['index']['我的资料']='My account';
+$lang['index']['退出帐户']='logout';
+$lang['index']['登陆']='login';
+$lang['index']['注册']='Sign up';
+$lang['index']['快速导航']='Quick look';
+$lang['index']['账户信息']='Account Details';
+$lang['index']['选择语言']='Language';
+$lang['index']['控制面板']='Control Panel';
+$lang['index']['订购产品']='Order';
+$lang['index']['用户中心']='Customer Area';
+$lang['index']['网络故障']='Network Issues';
+$lang['index']['公告信息']='Announcements';
+$lang['index']['提交服务单']='Submit Ticket';
+$lang['index']['UID']='UID';
+$lang['index']['个人信息']='Account Details';
+$lang['index']['账户充值']='Account Charge';
+$lang['index']['修改密码']='Change Password';
+$lang['index']['姓名']='Name';
+$lang['index']['国家']='Country';
+$lang['index']['地址']='Address';
+$lang['index']['邮编']='Zip Code';
+$lang['index']['电话号码']='Mobile Number';
+$lang['index']['电子邮箱']='E-mail';
+$lang['index']['预存款']='Pre deposit';
+$lang['index']['修改个人信息']='Edit Account Details';
+?>

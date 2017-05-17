@@ -1,0 +1,1 @@
+<?php  defined('SWAP_ROOT') or die('非法操作'); require SWAP_LIB . 'plug/function_plug.php'; 

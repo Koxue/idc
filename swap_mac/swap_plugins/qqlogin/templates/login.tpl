@@ -1,0 +1,1 @@
+<a href="{$ROOT}/plugin/qqlogin/login/">{$L["QQ登陆"]}</a><br>

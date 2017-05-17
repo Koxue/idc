@@ -1,0 +1,1 @@
+<?php  return array( 'name'=>'ServerEast', 'static'=>'/templates/servereast', 'version'=>'1.0', 'minsystemver'=>'0.3.6.5' ); 

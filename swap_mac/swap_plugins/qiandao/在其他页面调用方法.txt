@@ -1,0 +1,5 @@
+需要设置 提示返回跳转地址 才可使用
+
+全局方式调用示例:
+<tr><td>{$cjblapi_qiandao['lang']['签到领取']} {$cjblapi_qiandao['jeecho']} {$c['交易币名称']}</td></tr>
+<tr><td>{if $cjblapi_qiandao['err']!==''}{$cjblapi_qiandao['err']}{else}<a href="/index.php/plugin/qiandao/index" class="btn">{$cjblapi_qiandao['lang']['签到']}</a>{/if}</td></tr>
